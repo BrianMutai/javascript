@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function student (name, age){
+            this.name = name;
+            this.age = age;
+            this.yearsUntilFinish = yearsLeft; 
+        }
+        function yearsLeft(){
+            var numYears = 65-this.age;
+            return numYears;
+
+        }
+
+        var brian = new student("Brian is", 30);
+        var name = new student("name is", 56);
+    </script>
+</head>
+<body>
+    <script>
+        
+        document.write(brian.yearsUntilFinish());
+       //document.write(name.yearsUntilFinish());
+
+    </script>
+</body>
+</html>
